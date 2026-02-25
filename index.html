@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobreruedas | Escuela de Mountain Bike</title>
+    <meta name="description"
+        content="Aprende a dominar la montaña con nuestra escuela de Mountain Bike. Cursos para todos los niveles.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Sobreruedas Logo" class="logo-img"> SOBRERUEDAS
+        </div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#cursos">Cursos</a></li>
+            <li><a href="#contacto" class="btn-nav">Únete</a></li>
+        </ul>
+        <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+    </nav>
+
+    <header id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Domina la <span>Montaña</span></h1>
+            <p>Descubre tu verdadero potencial sobre dos ruedas. Desde principiantes hasta riders avanzados, te
+                enseñamos la técnica correcta para disfrutar al máximo y con seguridad.</p>
+            <div class="hero-buttons">
+                <a href="#cursos" class="btn btn-primary">Ver Cursos</a>
+                <a href="#contacto" class="btn btn-secondary">Reserva tu clase</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="nosotros" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>¿Por qué elegir <span>Sobreruedas</span>?</h2>
+                    <p>Somos apasionados del ciclismo de montaña con más de 10 años de experiencia enseñando. Creemos
+                        que la técnica es la base de la diversión y la seguridad.</p>
+                    <ul class="features">
+                        <li><i class="fa-solid fa-check-circle"></i> Instructores certificados</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Clases en los mejores senderos locales</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Grupos reducidos y atención personalizada</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Progresión garantizada</li>
+                    </ul>
+                </div>
+                <div class="about-gallery">
+                    <img src="fotogrupo1.jpeg" alt="Clase grupal MTB" class="gallery-img img-1">
+                    <img src="fotogrupo2.jpg" alt="Alumnos en sendero" class="gallery-img img-2">
+                    <img src="fotogrupo3.jpeg" alt="Técnica avanzada MTB" class="gallery-img img-3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cursos" class="courses">
+        <div class="container">
+            <h2 class="section-title">Nuestros <span>Cursos</span></h2>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-icon"><i class="fa-solid fa-seedling"></i></div>
+                    <h3>Fundamentos</h3>
+                    <p>Perfecto para quienes recién comienzan. Aprende posición base, frenado controlado, uso de cambios
+                        y equilibrio.</p>
+                    <span class="price">$40 / clase</span>
+                </div>
+                <div class="course-card featured">
+                    <div class="course-icon"><i class="fa-solid fa-route"></i></div>
+                    <h3>Fluidez en Senderos</h3>
+                    <p>Para riders intermedios. Mejora tu paso por curvas, lectura del terreno, pequeños saltos y
+                        superación de obstáculos.</p>
+                    <span class="price">$55 / clase</span>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <h3>Técnica Avanzada</h3>
+                    <p>Para experimentados. Perfeccionamiento de saltos, drops, curvas cerradas, rock gardens y
+                        velocidad.</p>
+                    <span class="price">$70 / clase</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="contact-box">
+                <h2>¿Listo para rodar?</h2>
+                <p>Déjanos tus datos y nos pondremos en contacto contigo para agendar tu primera clase.</p>
+                <form id="contactForm" class="contact-form">
+                    <div class="input-group">
+                        <input type="text" id="name" required placeholder="Tu Nombre">
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" required placeholder="Tu Correo">
+                    </div>
+                    <div class="input-group">
+                        <select id="level" required>
+                            <option value="" disabled selected>Nivel de experiencia</option>
+                            <option value="beginner">Principiante</option>
+                            <option value="intermediate">Intermedio</option>
+                            <option value="advanced">Avanzado</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Enviar Solicitud</button>
+                    <div id="form-message" class="hidden">¡Gracias! Te contactaremos pronto.</div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Sobreruedas Logo" class="logo-img"> SOBRERUEDAS
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2026 Sobreruedas Escuela MTB. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
