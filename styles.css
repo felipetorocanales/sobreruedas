@@ -309,14 +309,48 @@ section {
     aspect-ratio: 1/1;
 }
 
-/* Courses Section */
-.courses {
+/* Pricing Section */
+.pricing {
     background-color: var(--light);
 }
 
-.courses-grid {
+.section-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--text-light);
+    margin-top: -2rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.pricing-category {
+    margin-bottom: 4rem;
+}
+
+.pricing-category:last-child {
+    margin-bottom: 0;
+}
+
+.category-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--dark);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.category-title i {
+    color: var(--primary);
+}
+
+.pricing-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
 }
 
@@ -329,6 +363,8 @@ section {
     border: 1px solid #e2e8f0;
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .course-card:hover {
@@ -340,10 +376,11 @@ section {
     border: 2px solid var(--primary);
     transform: scale(1.05);
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
 }
 
 .course-card.featured::before {
-    content: 'Más Popular';
+    content: 'Recomendado';
     position: absolute;
     top: 1.5rem;
     right: -2rem;
@@ -380,14 +417,44 @@ section {
 .course-card p {
     color: var(--text-light);
     margin-bottom: 2rem;
-    min-height: 80px;
+    flex-grow: 1;
+}
+
+.plan-details {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 2rem;
+    flex-grow: 1;
+}
+
+.plan-details li {
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+    color: var(--text);
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.plan-details i {
+    color: var(--primary);
+    margin-top: 0.25rem;
+    width: 20px;
+    text-align: center;
 }
 
 .price {
     display: block;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 700;
     color: var(--dark);
+    margin-top: auto;
+}
+
+.price span {
+    font-size: 1rem;
+    color: var(--text-light);
+    font-weight: 400;
 }
 
 /* Contact Section */
