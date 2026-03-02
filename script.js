@@ -38,29 +38,4 @@ navItems.forEach(item => {
     });
 });
 
-// Form submission simulation
-const contactForm = document.getElementById('contactForm');
-const formMessage = document.getElementById('form-message');
 
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    // Animate button
-    const btn = contactForm.querySelector('button');
-    const originalText = btn.textContent;
-    btn.textContent = 'Enviando...';
-    btn.disabled = true;
-
-    // Simulate API call
-    setTimeout(() => {
-        btn.textContent = originalText;
-        btn.disabled = false;
-        contactForm.reset();
-
-        formMessage.classList.remove('hidden');
-
-        setTimeout(() => {
-            formMessage.classList.add('hidden');
-        }, 5000);
-    }, 1500);
-});

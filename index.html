@@ -20,8 +20,9 @@
         <ul class="nav-links">
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#nosotros">Nosotros</a></li>
-            <li><a href="#cursos">Cursos</a></li>
-            <li><a href="#contacto" class="btn-nav">Únete</a></li>
+            <li><a href="#niveles">Niveles</a></li>
+            <li><a href="#cursos">Precios</a></li>
+            <li><a href="https://wa.me/56976793191" class="btn-nav" target="_blank">Únete</a></li>
         </ul>
         <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
     </nav>
@@ -34,7 +35,7 @@
                 enseñamos la técnica correcta para disfrutar al máximo y con seguridad.</p>
             <div class="hero-buttons">
                 <a href="#cursos" class="btn btn-primary">Ver Cursos</a>
-                <a href="#contacto" class="btn btn-secondary">Reserva tu clase</a>
+                <a href="https://wa.me/56976793191" class="btn btn-secondary" target="_blank">Reserva tu clase</a>
             </div>
         </div>
     </header>
@@ -59,6 +60,68 @@
                     <img src="fotogrupo1.jpeg" alt="Clase grupal MTB" class="gallery-img img-1">
                     <img src="fotogrupo2.jpg" alt="Alumnos en sendero" class="gallery-img img-2">
                     <img src="fotogrupo3.jpeg" alt="Técnica avanzada MTB" class="gallery-img img-3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="niveles" class="levels">
+        <div class="container">
+            <h2 class="section-title">Niveles de <span>Aprendizaje</span></h2>
+            <div class="levels-grid">
+                <div class="level-card">
+                    <div class="level-header">
+                        <i class="fa-solid fa-seedling"></i>
+                        <h3>Nivel Básico</h3>
+                    </div>
+                    <ul class="level-list">
+                        <li>Fundamentos del MTB</li>
+                        <li>Postura sobre la bicicleta</li>
+                        <li>Técnicas de frenado</li>
+                        <li>Técnicas de curvas básicas</li>
+                        <li>Introducción al rockgarden</li>
+                        <li>Técnica del bunny hop</li>
+                        <li>Técnicas de saltos básicos</li>
+                    </ul>
+                </div>
+
+                <div class="level-card">
+                    <div class="level-header">
+                        <i class="fa-solid fa-mountain-sun"></i>
+                        <h3>Nivel Intermedio</h3>
+                    </div>
+                    <ul class="level-list">
+                        <li>Curvas avanzadas y contraperaltes</li>
+                        <li>Bajones (Drops)</li>
+                        <li>Rockgarden intermedio</li>
+                        <li>Saltos y fluidez</li>
+                    </ul>
+                </div>
+
+                <div class="level-card">
+                    <div class="level-header">
+                        <i class="fa-solid fa-bolt"></i>
+                        <h3>Nivel Avanzado</h3>
+                    </div>
+                    <ul class="level-list">
+                        <li>Curvas con inclinación</li>
+                        <li>Técnica en contraperaltes</li>
+                        <li>Rockgarden técnico</li>
+                        <li>Saltos avanzados y whips</li>
+                    </ul>
+                </div>
+
+                <div class="level-card featured-level">
+                    <div class="level-header">
+                        <i class="fa-solid fa-trophy"></i>
+                        <h3>Nivel Competitivo</h3>
+                    </div>
+                    <ul class="level-list">
+                        <li>Lectura de pista y trazado</li>
+                        <li>Anticipación y líneas</li>
+                        <li>Drops y saltos racing</li>
+                        <li>Pistas técnicas y físicas</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -133,29 +196,14 @@
         </div>
     </section>
 
-    <section id="contacto" class="contact">
+    <section id="video" class="video-section">
         <div class="container">
-            <div class="contact-box">
-                <h2>¿Listo para rodar?</h2>
-                <p>Déjanos tus datos y nos pondremos en contacto contigo para agendar tu primera clase.</p>
-                <form id="contactForm" class="contact-form">
-                    <div class="input-group">
-                        <input type="text" id="name" required placeholder="Tu Nombre">
-                    </div>
-                    <div class="input-group">
-                        <input type="email" id="email" required placeholder="Tu Correo">
-                    </div>
-                    <div class="input-group">
-                        <select id="level" required>
-                            <option value="" disabled selected>Nivel de experiencia</option>
-                            <option value="beginner">Principiante</option>
-                            <option value="intermediate">Intermedio</option>
-                            <option value="advanced">Avanzado</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-block">Enviar Solicitud</button>
-                    <div id="form-message" class="hidden">¡Gracias! Te contactaremos pronto.</div>
-                </form>
+            <h2 class="section-title">Nuestra <span>Pasión</span> en Acción</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/IrWZp4kzzok" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
             </div>
         </div>
     </section>
@@ -169,12 +217,17 @@
                 <div class="social-links">
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
                     <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.youtube.com/@Sobreruedas.cl_" target="_blank"><i
+                            class="fa-brands fa-youtube"></i></a>
                 </div>
             </div>
             <p class="copyright">&copy; 2026 Sobreruedas Escuela MTB. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <a href="https://wa.me/56976793191" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
     <script src="script.js"></script>
 </body>
